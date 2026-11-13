@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Faz o Tailwind v4 escanear as páginas HTML em busca de classes usadas */
+@source "../../*.html";
+@source "../../**/*.html";
+@source "../../assets/js/*.js";
+
+@theme {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+/* Brilho "zen" usado na seção noturna de eventos (ex: Shantifloat) */
+@utility shadow-glow {
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.45);
+}
+
+@utility text-glow {
+  text-shadow: 0 0 12px rgba(125, 211, 252, 0.6);
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}

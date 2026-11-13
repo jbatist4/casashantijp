@@ -1,26 +1,15 @@
 {
-  "name": "casashantijp",
-  "version": "0.1.0",
+  "name": "casashanti-site",
+  "version": "1.0.0",
   "private": true,
+  "description": "Site institucional estático da Casa Shanti (HTML + Tailwind CSS)",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "build": "tailwindcss -i ./assets/src/input.css -o ./assets/css/style.css --minify",
+    "watch": "tailwindcss -i ./assets/src/input.css -o ./assets/css/style.css --watch"
   },
-  "dependencies": {
-    "next": "16.2.9",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
-  },
+  "author": "Jorge Batista <jbatist4321@gmail.com> (https://www.linkedin.com/in/jbatist4321/)",
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.9",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "@tailwindcss/cli": "^4",
+    "tailwindcss": "^4"
   }
 }

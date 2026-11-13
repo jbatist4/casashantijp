@@ -1,0 +1,577 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5V7VY43KMC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5V7VY43KMC');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recursos - Casa Shanti</title>
+  <meta name="description" content="Ferramentas para sua prática de yoga: contador Japamala, metrônomo respiratório, Brahma Muhurta, respiração coletiva e temporizador de Shavasana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col bg-stone-50 text-teal-900" style="overflow-x:hidden;">
+
+<header class="sticky top-0 z-40 border-b border-teal-100 bg-stone-50/90 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+    <a href="/" class="flex items-center gap-3 font-display text-2xl font-semibold text-teal-800">
+      <img src="/assets/images/logo-shanti-transparente.png" alt="Casa Shanti" class="h-16 w-auto" />
+    </a>
+
+    <nav class="hidden gap-8 md:flex" aria-label="Menu principal">
+      <ul class="flex gap-8">
+        <li><a href="/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Início</span></a></li>
+        <li><a href="/grade-horarios/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Modalidades & Grade</span></a></li>
+        <li><a href="/eventos/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Eventos</span></a></li>
+        <li><a href="/galeria/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Galeria</span></a></li>
+        <li><a href="/locacao/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Locação</span></a></li>
+        <li><a href="/recursos/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Recursos</span></a></li>
+        <li><a href="/sobre/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Sobre</span></a></li>
+      </ul>
+    </nav>
+
+    <button
+      type="button"
+      id="casashanti-menu-toggle"
+      class="md:hidden"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="casashanti-mobile-menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <nav id="casashanti-mobile-menu" class="hidden border-t border-teal-100 bg-stone-50 px-4 py-4 md:hidden" aria-label="Menu mobile">
+    <ul class="flex flex-col gap-4">
+      <li><a href="/"><span class="block text-base font-medium text-teal-800">Início</span></a></li>
+      <li><a href="/grade-horarios/"><span class="block text-base font-medium text-teal-800">Modalidades & Grade</span></a></li>
+      <li><a href="/eventos/"><span class="block text-base font-medium text-teal-800">Eventos</span></a></li>
+      <li><a href="/galeria/"><span class="block text-base font-medium text-teal-800">Galeria</span></a></li>
+      <li><a href="/locacao/"><span class="block text-base font-medium text-teal-800">Locação</span></a></li>
+      <li><a href="/recursos/"><span class="block text-base font-medium text-teal-800">Recursos</span></a></li>
+      <li><a href="/sobre/"><span class="block text-base font-medium text-teal-800">Sobre</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="flex-1">
+
+<section class="bg-teal-900 py-14 text-stone-50">
+  <div class="mx-auto max-w-4xl px-4 text-center sm:px-6">
+    <h1 class="font-display text-4xl font-semibold sm:text-5xl">Ferramentas para sua prática</h1>
+    <p class="mt-4 text-stone-100">Pequenos recursos para apoiar a sua jornada dentro e fora do tapete.</p>
+  </div>
+</section>
+
+<section class="bg-teal-50 py-14">
+  <div class="mx-auto max-w-4xl px-4 sm:px-6">
+
+    <!-- Abas -->
+    <div class="flex flex-wrap gap-2 justify-center mb-6" id="ferramentas-tabs" role="tablist">
+      <button class="ferr-tab px-4 py-2 rounded-full text-sm font-semibold border transition-colors" data-tab="japamala" role="tab">Japamala</button>
+      <button class="ferr-tab px-4 py-2 rounded-full text-sm font-semibold border transition-colors" data-tab="pranayama" role="tab">Respiração</button>
+      <button class="ferr-tab px-4 py-2 rounded-full text-sm font-semibold border transition-colors" data-tab="brahma" role="tab">Brahma Muhurta</button>
+      <button class="ferr-tab px-4 py-2 rounded-full text-sm font-semibold border transition-colors" data-tab="coletiva" role="tab">Resp. Coletiva</button>
+      <button class="ferr-tab px-4 py-2 rounded-full text-sm font-semibold border transition-colors" data-tab="shavasana" role="tab">Shavasana</button>
+    </div>
+
+    <!-- Painéis -->
+    <div class="bg-white rounded-3xl border border-teal-100 shadow-sm p-6 sm:p-8">
+
+      <!-- Japamala -->
+      <div id="ferr-japamala" class="ferr-panel flex flex-col items-center text-center">
+        <h3 class="font-display text-2xl font-semibold text-teal-800 mb-2">Contador de Ciclos Japamala</h3>
+        <p class="text-sm text-teal-900/70 max-w-lg mx-auto mb-6">Toque no centro a cada repetição do seu mantra e acompanhe o progresso até a meta escolhida.</p>
+        <div class="flex gap-2 mb-8" id="japa-metas">
+          <button class="japa-meta px-5 py-2 rounded-full text-sm font-semibold border transition-colors" data-meta="27">27 contas</button>
+          <button class="japa-meta px-5 py-2 rounded-full text-sm font-semibold border transition-colors" data-meta="54">54 contas</button>
+          <button class="japa-meta px-5 py-2 rounded-full text-sm font-semibold border transition-colors" data-meta="108">108 contas</button>
+        </div>
+        <button id="japa-btn" aria-label="Contar repetição" style="position:relative;width:220px;height:220px;border-radius:50%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 200 200" style="position:absolute;inset:0;width:100%;height:100%;transform:rotate(-90deg);">
+            <circle cx="100" cy="100" r="90" fill="none" stroke="#cffafe" stroke-width="8"/>
+            <circle id="japa-ring" cx="100" cy="100" r="90" fill="none" stroke="#0e7490" stroke-width="8" stroke-linecap="round" stroke-dasharray="565.49" stroke-dashoffset="565.49" style="transition:stroke-dashoffset 0.2s ease,stroke 0.2s"/>
+          </svg>
+          <div style="position:relative;background:rgba(255,255,255,0.9);border-radius:50%;width:160px;height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:inset 0 2px 8px rgba(0,0,0,0.06);">
+            <span id="japa-count" class="font-display" style="font-size:3rem;font-weight:700;color:#0f172a;line-height:1;">0</span>
+            <span id="japa-de" style="font-size:0.85rem;color:#6b7280;">de 108</span>
+          </div>
+        </button>
+        <p id="japa-completo" class="mt-5 text-teal-700 font-semibold hidden">Ciclo completo. Que esta prática traga paz ao seu dia.</p>
+        <button id="japa-reiniciar" class="mt-5 text-sm font-medium text-teal-600 underline underline-offset-4 hover:text-teal-800 transition-colors">Reiniciar contagem</button>
+      </div>
+
+      <!-- Pranayama Pacer -->
+      <div id="ferr-pranayama" class="ferr-panel hidden flex flex-col items-center text-center">
+        <h3 class="font-display text-2xl font-semibold text-teal-800 mb-2">Metrônomo Respiratório</h3>
+        <p class="text-sm text-teal-900/70 max-w-lg mx-auto mb-6">Defina os tempos da sua respiração e siga o círculo: ele expande na inspiração, permanece na retenção e contrai na expiração.</p>
+        <div class="grid gap-3 w-full max-w-md mb-8" style="grid-template-columns:repeat(3,1fr);">
+          <label class="flex flex-col gap-1 text-xs font-semibold text-teal-800">Inspiração (s)
+            <input id="prana-inspira" type="number" min="1" max="30" value="4" class="rounded-xl border border-teal-200 bg-white px-3 py-2 text-center text-teal-900 text-sm focus:outline-none focus:ring-2 focus:ring-teal-300" />
+          </label>
+          <label class="flex flex-col gap-1 text-xs font-semibold text-teal-800">Retenção (s)
+            <input id="prana-retencao" type="number" min="0" max="30" value="4" class="rounded-xl border border-teal-200 bg-white px-3 py-2 text-center text-teal-900 text-sm focus:outline-none focus:ring-2 focus:ring-teal-300" />
+          </label>
+          <label class="flex flex-col gap-1 text-xs font-semibold text-teal-800">Expiração (s)
+            <input id="prana-expira" type="number" min="1" max="30" value="6" class="rounded-xl border border-teal-200 bg-white px-3 py-2 text-center text-teal-900 text-sm focus:outline-none focus:ring-2 focus:ring-teal-300" />
+          </label>
+        </div>
+        <div style="position:relative;width:100%;max-width:320px;aspect-ratio:1;border-radius:1.5rem;overflow:hidden;background:#f0fdfa;border:1px solid #cffafe;display:flex;align-items:center;justify-content:center;margin-bottom:2rem;">
+          <div id="prana-circulo" style="border-radius:50%;background:rgba(20,184,166,0.3);border:2px solid #0d9488;width:45%;height:45%;display:flex;align-items:center;justify-content:center;transition-property:transform;transition-timing-function:ease-in-out;transition-duration:4s;">
+            <span id="prana-label" style="color:white;font-weight:600;font-size:0.9rem;">Pronto</span>
+          </div>
+        </div>
+        <button id="prana-btn" class="inline-flex items-center justify-center gap-2 font-semibold px-8 py-3 rounded-full transition-all duration-300 text-sm bg-teal-600 text-white hover:bg-teal-700">Iniciar</button>
+      </div>
+
+      <!-- Brahma Muhurta -->
+      <div id="ferr-brahma" class="ferr-panel hidden flex flex-col items-center text-center max-w-xl mx-auto">
+        <h3 class="font-display text-2xl font-semibold text-teal-800 mb-2">Calculadora de Brahma Muhurta</h3>
+        <p class="text-sm text-teal-900/70 max-w-lg mx-auto mb-6">O Brahma Muhurta é o período mais propício para meditação e prática, começando 1h36 antes do nascer do sol e durando 48 minutos.</p>
+        <label class="flex flex-col items-center gap-2 mb-6">
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-700">Horário do nascer do sol na sua cidade</span>
+          <input id="brahma-sol" type="time" value="05:15" class="rounded-full border border-teal-200 bg-white px-6 py-3 text-center text-teal-900 text-lg font-semibold focus:outline-none focus:ring-2 focus:ring-teal-300" />
+        </label>
+        <div id="brahma-resultado" class="w-full bg-amber-50 border border-amber-200 rounded-2xl p-6">
+          <p class="text-xs font-bold uppercase tracking-widest text-amber-700 mb-2">Brahma Muhurta de hoje</p>
+          <p id="brahma-horario" class="font-display text-3xl font-semibold text-teal-900">03:39 às 04:27</p>
+          <p class="text-sm text-teal-900/70 mt-2">Aproveite esses 48 minutos para meditar, respirar ou praticar em silêncio.</p>
+        </div>
+      </div>
+
+      <!-- Respiração Coletiva -->
+      <div id="ferr-coletiva" class="ferr-panel hidden flex flex-col items-center text-center">
+        <span class="inline-block bg-teal-100 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-3">Para uso em aula</span>
+        <h3 class="font-display text-2xl font-semibold text-teal-800 mb-2">Gerador de Respiração Coletiva</h3>
+        <p class="text-sm text-teal-900/70 max-w-lg mx-auto mb-6">Projete esta tela para guiar a respiração da turma. O círculo se expande e contrai acompanhando cada fase.</p>
+        <div class="flex flex-wrap gap-2 justify-center mb-8" id="colet-modos">
+          <button class="colet-modo px-4 py-2 rounded-full text-sm font-semibold border transition-colors" data-modo="equilibrio">Equilíbrio (4-4-4-4)</button>
+          <button class="colet-modo px-4 py-2 rounded-full text-sm font-semibold border transition-colors" data-modo="calmante">Calmante (4-2-4)</button>
+        </div>
+        <div style="position:relative;width:100%;max-width:480px;aspect-ratio:16/9;border-radius:1.5rem;overflow:hidden;background:#f0fdfa;border:1px solid #cffafe;display:flex;align-items:center;justify-content:center;margin-bottom:2rem;">
+          <div id="colet-circulo" style="border-radius:50%;background:rgba(20,184,166,0.3);border:2px solid #0d9488;width:40%;height:80%;display:flex;align-items:center;justify-content:center;transition-property:transform;transition-timing-function:ease-in-out;transition-duration:0.6s;">
+            <span id="colet-label" style="color:white;font-weight:600;font-size:1rem;padding:0 1rem;text-align:center;">Pronto</span>
+          </div>
+        </div>
+        <button id="colet-btn" class="inline-flex items-center justify-center gap-2 font-semibold px-8 py-3 rounded-full transition-all duration-300 text-sm bg-teal-600 text-white hover:bg-teal-700">Iniciar</button>
+      </div>
+
+      <!-- Shavasana Timer -->
+      <div id="ferr-shavasana" class="ferr-panel hidden flex flex-col items-center text-center">
+        <span class="inline-block bg-teal-100 text-teal-700 text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-3">Para uso em aula</span>
+        <h3 class="font-display text-2xl font-semibold text-teal-800 mb-2">Temporizador de Shavasana</h3>
+        <p class="text-sm text-teal-900/70 max-w-lg mx-auto mb-1">Cronômetro com ondas binaurais em frequência Theta e ruído rosa suave para aprofundar o descanso.</p>
+        <p class="text-xs text-teal-900/50 max-w-lg mx-auto mb-6 italic">Recomenda-se o uso de fones de ouvido para o efeito binaural.</p>
+        <div style="position:relative;width:100%;max-width:480px;aspect-ratio:16/9;border-radius:1.5rem;overflow:hidden;background:#f0fdfa;border:1px solid #cffafe;display:flex;align-items:center;justify-content:center;margin-bottom:2rem;">
+          <span id="shava-display" class="font-display" style="font-size:4rem;font-weight:700;color:#134e4a;position:relative;">07:00</span>
+        </div>
+        <div class="flex gap-2 mb-8" id="shava-duracoes">
+          <button class="shava-dur px-5 py-2 rounded-full text-sm font-semibold border transition-colors" data-min="5">5 min</button>
+          <button class="shava-dur px-5 py-2 rounded-full text-sm font-semibold border transition-colors" data-min="7">7 min</button>
+          <button class="shava-dur px-5 py-2 rounded-full text-sm font-semibold border transition-colors" data-min="10">10 min</button>
+        </div>
+        <button id="shava-btn" class="inline-flex items-center justify-center gap-2 font-semibold px-8 py-3 rounded-full transition-all duration-300 text-sm bg-teal-600 text-white hover:bg-teal-700">Iniciar Shavasana</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-teal-900 text-stone-100">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
+    <div>
+      <h3 class="font-display text-2xl font-semibold text-stone-50">Casa Shanti</h3>
+      <p class="mt-3 text-sm text-teal-100">Um espaço de yoga e bem-estar para respirar, praticar e se reconectar.</p>
+    </div>
+    <div>
+      <h4 class="text-sm font-semibold uppercase tracking-wide text-amber-300">Contato</h4>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li>Rua Francisco de Andrade Carneiro, 62 - Bessa, João Pessoa - PB</li>
+        <li>
+          <a href="https://wa.me/5583993503000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Casa%20Shanti." target="_blank" rel="noopener noreferrer" class="hover:text-amber-300">
+            WhatsApp: (83) 9 9350-3000
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/_casashanti" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300">@_casashanti</a>
+          /
+          <a href="https://instagram.com/yoginilu" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300">@yoginilu</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-sm font-semibold uppercase tracking-wide text-amber-300">Navegação</h4>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="/grade-horarios/" class="hover:text-amber-300">Modalidades & Grade</a></li>
+        <li><a href="/eventos/" class="hover:text-amber-300">Eventos</a></li>
+        <li><a href="/galeria/" class="hover:text-amber-300">Galeria de Memórias</a></li>
+        <li><a href="/locacao/" class="hover:text-amber-300">Locação de Espaço</a></li>
+        <li><a href="/recursos/" class="hover:text-amber-300">Recursos</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-teal-800 py-4 text-center text-xs text-teal-200">
+    &copy; <span id="ano-atual">2026</span> Casa Shanti. Todos os direitos reservados.
+  </div>
+</footer>
+
+<a
+  href="https://wa.me/5583993503000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Casa%20Shanti."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Conversar no WhatsApp"
+  class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-teal-600 text-stone-50 shadow-lg transition-transform hover:scale-105 hover:bg-teal-700"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2Zm0 18c-1.66 0-3.214-.45-4.553-1.234l-.327-.193-3.024.9.9-3.024-.193-.327A8 8 0 1 1 12 20Zm4.4-5.6c-.243-.122-1.434-.706-1.656-.787-.222-.082-.384-.122-.546.122-.162.244-.626.787-.768.95-.142.163-.284.183-.526.061-.243-.122-1.026-.378-1.957-1.21-.723-.645-1.21-1.44-1.352-1.683-.142-.244-.015-.376.107-.498.122-.122.273-.317.41-.476.137-.158.183-.273.274-.456.092-.183.046-.34-.046-.476-.092-.137-.41-.99-.563-1.367-.15-.366-.304-.317-.418-.323-.107-.006-.23-.007-.353-.007-.122 0-.32.046-.49.226-.17.183-.65.635-.65 1.547 0 .913.668 1.795.762 1.918.092.122 1.27 1.946 3.083 2.65 1.812.703 1.812.468 2.13.44.318-.03 1.026-.42 1.17-.825.142-.406.142-.754.1-.825-.04-.07-.152-.112-.395-.234Z"/>
+  </svg>
+</a>
+
+<script src="/assets/js/main.js"></script>
+<script>
+  document.getElementById('ano-atual').textContent = new Date().getFullYear();
+</script>
+<script>
+(function() {
+  /* ── Tabs ── */
+  var tabs = document.querySelectorAll('.ferr-tab');
+  var panels = document.querySelectorAll('.ferr-panel');
+
+  function setTab(id) {
+    tabs.forEach(function(t) {
+      var on = t.dataset.tab === id;
+      t.style.background = on ? '#0e7490' : '#ffffff';
+      t.style.color = on ? '#ffffff' : '#374151';
+      t.style.borderColor = on ? '#0e7490' : '#d1d5db';
+    });
+    panels.forEach(function(p) {
+      p.classList.toggle('hidden', p.id !== 'ferr-' + id);
+    });
+  }
+  tabs.forEach(function(t) {
+    t.addEventListener('click', function() { setTab(t.dataset.tab); });
+  });
+  setTab('japamala');
+
+  /* ── Japamala ── */
+  var japaMeta = 108, japaCount = 0;
+  var japaRing = document.getElementById('japa-ring');
+  var japaCountEl = document.getElementById('japa-count');
+  var japaDeEl = document.getElementById('japa-de');
+  var japaCompleto = document.getElementById('japa-completo');
+  var circum = 2 * Math.PI * 90;
+
+  function japaRender() {
+    var prog = Math.min(japaCount / japaMeta, 1);
+    japaRing.setAttribute('stroke-dashoffset', circum * (1 - prog));
+    japaRing.setAttribute('stroke', japaCount >= japaMeta ? '#15803d' : '#0e7490');
+    japaCountEl.textContent = japaCount;
+    japaDeEl.textContent = 'de ' + japaMeta;
+    japaCompleto.classList.toggle('hidden', japaCount < japaMeta);
+    document.getElementById('japa-btn').disabled = japaCount >= japaMeta;
+  }
+
+  document.querySelectorAll('.japa-meta').forEach(function(b) {
+    b.addEventListener('click', function() {
+      japaMeta = parseInt(b.dataset.meta);
+      japaCount = 0;
+      document.querySelectorAll('.japa-meta').forEach(function(x) {
+        var on = x.dataset.meta === b.dataset.meta;
+        x.style.background = on ? '#e89610' : '#ffffff';
+        x.style.color = on ? '#ffffff' : '#374151';
+        x.style.borderColor = on ? '#e89610' : '#d1d5db';
+      });
+      japaRender();
+    });
+  });
+
+  document.getElementById('japa-btn').addEventListener('click', function() {
+    if (japaCount < japaMeta) {
+      if (navigator.vibrate) navigator.vibrate(10);
+      japaCount++;
+      japaRender();
+    }
+  });
+
+  document.getElementById('japa-reiniciar').addEventListener('click', function() {
+    japaCount = 0;
+    japaRender();
+  });
+
+  document.querySelectorAll('.japa-meta').forEach(function(b) {
+    var on = b.dataset.meta === '108';
+    b.style.background = on ? '#e89610' : '#ffffff';
+    b.style.color = on ? '#ffffff' : '#374151';
+    b.style.borderColor = on ? '#e89610' : '#d1d5db';
+  });
+  japaRender();
+
+  /* ── Pranayama Pacer ── */
+  var pranaAtivo = false, pranaTmr = null, pranaAudioCtx = null;
+  var pranaFases = [], pranaIdx = 0;
+  var pranaCirculo = document.getElementById('prana-circulo');
+  var pranaLabel = document.getElementById('prana-label');
+  var pranaBtn = document.getElementById('prana-btn');
+
+  function pranaBeep() {
+    try {
+      if (!pranaAudioCtx) pranaAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      var ctx = pranaAudioCtx;
+      var osc = ctx.createOscillator(), gain = ctx.createGain();
+      osc.type = 'sine'; osc.frequency.value = 432;
+      gain.gain.setValueAtTime(0.0001, ctx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.12, ctx.currentTime + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, ctx.currentTime + 0.35);
+      osc.connect(gain); gain.connect(ctx.destination);
+      osc.start(); osc.stop(ctx.currentTime + 0.35);
+    } catch(e) {}
+  }
+
+  function pranaStep() {
+    var f = pranaFases[pranaIdx % pranaFases.length];
+    pranaLabel.textContent = f.label;
+    var expand = f.id !== 'expire';
+    pranaCirculo.style.transitionDuration = f.dur + 's';
+    pranaCirculo.style.transform = 'scale(' + (expand ? 1.35 : 0.65) + ')';
+    pranaBeep();
+    pranaTmr = setTimeout(function() { pranaIdx++; pranaStep(); }, f.dur * 1000);
+  }
+
+  pranaBtn.addEventListener('click', function() {
+    pranaAtivo = !pranaAtivo;
+    if (pranaAtivo) {
+      var ins = Math.max(1, parseInt(document.getElementById('prana-inspira').value) || 1);
+      var ret = Math.max(0, parseInt(document.getElementById('prana-retencao').value) || 0);
+      var exp = Math.max(1, parseInt(document.getElementById('prana-expira').value) || 1);
+      pranaFases = [{ id:'inspire', label:'Inspire', dur:ins }];
+      if (ret > 0) pranaFases.push({ id:'segure', label:'Segure', dur:ret });
+      pranaFases.push({ id:'expire', label:'Expire', dur:exp });
+      pranaIdx = 0;
+      ['prana-inspira','prana-retencao','prana-expira'].forEach(function(id){ document.getElementById(id).disabled = true; });
+      pranaBtn.textContent = 'Parar';
+      pranaBtn.style.background = '#134e4a';
+      pranaStep();
+    } else {
+      clearTimeout(pranaTmr);
+      pranaLabel.textContent = 'Pronto';
+      pranaCirculo.style.transitionDuration = '0.6s';
+      pranaCirculo.style.transform = 'scale(1)';
+      ['prana-inspira','prana-retencao','prana-expira'].forEach(function(id){ document.getElementById(id).disabled = false; });
+      pranaBtn.textContent = 'Iniciar';
+      pranaBtn.style.background = '';
+    }
+  });
+
+  /* ── Brahma Muhurta ── */
+  function brahmaCalc() {
+    var val = document.getElementById('brahma-sol').value;
+    var m = val.match(/^(\d{1,2}):(\d{2})$/);
+    if (!m) return;
+    var total = parseInt(m[1]) * 60 + parseInt(m[2]);
+    var inicio = ((total - 96) % 1440 + 1440) % 1440;
+    var fim = (inicio + 48) % 1440;
+    function fmt(t) { return String(Math.floor(t/60)).padStart(2,'0') + ':' + String(t%60).padStart(2,'0'); }
+    document.getElementById('brahma-horario').textContent = fmt(inicio) + ' às ' + fmt(fim);
+  }
+  document.getElementById('brahma-sol').addEventListener('input', brahmaCalc);
+  brahmaCalc();
+
+  /* ── Respiração Coletiva ── */
+  var coletAtivo = false, coletTmr = null, coletIdx = 0, coletModo = 'equilibrio';
+  var coletCirculo = document.getElementById('colet-circulo');
+  var coletLabel = document.getElementById('colet-label');
+  var coletBtn = document.getElementById('colet-btn');
+  var coletSeqs = {
+    equilibrio: [{id:'inspire',label:'Inspire',dur:4},{id:'retenha-cheio',label:'Retenha (Cheio)',dur:4},{id:'expire',label:'Expire',dur:4},{id:'retenha-vazio',label:'Retenha (Vazio)',dur:4}],
+    calmante:   [{id:'inspire',label:'Inspire',dur:4},{id:'retenha-cheio',label:'Retenha (Cheio)',dur:2},{id:'expire',label:'Expire',dur:4}]
+  };
+
+  document.querySelectorAll('.colet-modo').forEach(function(b) {
+    b.addEventListener('click', function() {
+      if (coletAtivo) return;
+      coletModo = b.dataset.modo;
+      document.querySelectorAll('.colet-modo').forEach(function(x) {
+        var on = x.dataset.modo === coletModo;
+        x.style.background = on ? '#0e7490' : '#ffffff';
+        x.style.color = on ? '#ffffff' : '#374151';
+        x.style.borderColor = on ? '#0e7490' : '#d1d5db';
+      });
+    });
+  });
+
+  function coletStep() {
+    var seq = coletSeqs[coletModo];
+    var f = seq[coletIdx % seq.length];
+    coletLabel.textContent = f.label;
+    var expandido = f.id === 'inspire' || f.id === 'retenha-cheio';
+    var dur = (f.id === 'inspire' || f.id === 'expire') ? f.dur : 0.6;
+    coletCirculo.style.transitionDuration = dur + 's';
+    coletCirculo.style.transform = 'scale(' + (expandido ? 1.4 : 0.6) + ')';
+    coletTmr = setTimeout(function() { coletIdx++; coletStep(); }, f.dur * 1000);
+  }
+
+  coletBtn.addEventListener('click', function() {
+    coletAtivo = !coletAtivo;
+    if (coletAtivo) {
+      coletIdx = 0;
+      document.querySelectorAll('.colet-modo').forEach(function(b){ b.disabled = true; });
+      coletBtn.textContent = 'Parar';
+      coletBtn.style.background = '#134e4a';
+      coletStep();
+    } else {
+      clearTimeout(coletTmr);
+      coletLabel.textContent = 'Pronto';
+      coletCirculo.style.transitionDuration = '0.6s';
+      coletCirculo.style.transform = 'scale(1)';
+      document.querySelectorAll('.colet-modo').forEach(function(b){ b.disabled = false; });
+      coletBtn.textContent = 'Iniciar';
+      coletBtn.style.background = '';
+    }
+  });
+
+  document.querySelectorAll('.colet-modo').forEach(function(b) {
+    var on = b.dataset.modo === 'equilibrio';
+    b.style.background = on ? '#0e7490' : '#ffffff';
+    b.style.color = on ? '#ffffff' : '#374151';
+    b.style.borderColor = on ? '#0e7490' : '#d1d5db';
+  });
+
+  /* ── Shavasana Timer ── */
+  var shavaDurMin = 7, shavaSegs = 7*60, shavaAtivo = false, shavaInterval = null;
+  var shavaAudioCtx = null, shavaSom = null;
+  var shavaDisplay = document.getElementById('shava-display');
+  var shavaBtn = document.getElementById('shava-btn');
+
+  function shavaFmt(s) { return String(Math.floor(s/60)).padStart(2,'0') + ':' + String(s%60).padStart(2,'0'); }
+
+  document.querySelectorAll('.shava-dur').forEach(function(b) {
+    b.addEventListener('click', function() {
+      if (shavaAtivo) return;
+      shavaDurMin = parseInt(b.dataset.min);
+      shavaSegs = shavaDurMin * 60;
+      shavaDisplay.textContent = shavaFmt(shavaSegs);
+      document.querySelectorAll('.shava-dur').forEach(function(x) {
+        var on = x.dataset.min === b.dataset.min;
+        x.style.background = on ? '#e89610' : '#ffffff';
+        x.style.color = on ? '#ffffff' : '#374151';
+        x.style.borderColor = on ? '#e89610' : '#d1d5db';
+      });
+    });
+  });
+
+  function shavaRuidoRosa(ctx) {
+    var dur = 4, tam = dur * ctx.sampleRate;
+    var buf = ctx.createBuffer(2, tam, ctx.sampleRate);
+    for (var c = 0; c < 2; c++) {
+      var d = buf.getChannelData(c);
+      var b0=0,b1=0,b2=0,b3=0,b4=0,b5=0,b6=0;
+      for (var i = 0; i < tam; i++) {
+        var w = Math.random()*2-1;
+        b0=0.99886*b0+w*0.0555179; b1=0.99332*b1+w*0.0750759;
+        b2=0.969*b2+w*0.153852; b3=0.8665*b3+w*0.3104856;
+        b4=0.55*b4+w*0.5329522; b5=-0.7616*b5-w*0.016898;
+        d[i]=(b0+b1+b2+b3+b4+b5+b6+w*0.5362)*0.11; b6=w*0.115926;
+      }
+    }
+    return buf;
+  }
+
+  function shavaIniciarSom(ctx) {
+    var merger = ctx.createChannelMerger(2), master = ctx.createGain();
+    master.gain.setValueAtTime(0, ctx.currentTime);
+    master.gain.linearRampToValueAtTime(0.15, ctx.currentTime + 2);
+    var oscE = ctx.createOscillator(), oscD = ctx.createOscillator();
+    oscE.type = 'sine'; oscE.frequency.value = 100;
+    oscD.type = 'sine'; oscD.frequency.value = 106;
+    oscE.connect(merger, 0, 0); oscD.connect(merger, 0, 1);
+    var ruido = ctx.createBufferSource();
+    ruido.buffer = shavaRuidoRosa(ctx); ruido.loop = true;
+    var gr = ctx.createGain(); gr.gain.value = 0.04;
+    ruido.connect(gr).connect(master);
+    merger.connect(master); master.connect(ctx.destination);
+    oscE.start(); oscD.start(); ruido.start();
+    return { oscE:oscE, oscD:oscD, ruido:ruido, master:master };
+  }
+
+  function shavaPararSom(ctx, som) {
+    var agora = ctx.currentTime;
+    som.master.gain.cancelScheduledValues(agora);
+    som.master.gain.setValueAtTime(som.master.gain.value, agora);
+    som.master.gain.linearRampToValueAtTime(0, agora + 0.5);
+    setTimeout(function() {
+      try { som.oscE.stop(); som.oscD.stop(); som.ruido.stop(); } catch(e) {}
+    }, 550);
+  }
+
+  function shavaGongo(ctx) {
+    var agora = ctx.currentTime;
+    [220, 330, 440].forEach(function(freq, i) {
+      var osc = ctx.createOscillator(), g = ctx.createGain();
+      osc.type = 'sine'; osc.frequency.value = freq;
+      g.gain.setValueAtTime(0.0001, agora);
+      g.gain.exponentialRampToValueAtTime(0.25/(i+1), agora+0.05);
+      g.gain.exponentialRampToValueAtTime(0.0001, agora+5);
+      osc.connect(g).connect(ctx.destination);
+      osc.start(agora); osc.stop(agora+5);
+    });
+  }
+
+  shavaBtn.addEventListener('click', function() {
+    shavaAtivo = !shavaAtivo;
+    if (shavaAtivo) {
+      if (!shavaAudioCtx) shavaAudioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      var ctx = shavaAudioCtx;
+      if (ctx.state === 'suspended') ctx.resume();
+      shavaSom = shavaIniciarSom(ctx);
+      shavaSegs = shavaDurMin * 60;
+      shavaDisplay.textContent = shavaFmt(shavaSegs);
+      document.querySelectorAll('.shava-dur').forEach(function(b){ b.disabled = true; });
+      shavaBtn.textContent = 'Parar';
+      shavaBtn.style.background = '#134e4a';
+      shavaInterval = setInterval(function() {
+        shavaSegs--;
+        shavaDisplay.textContent = shavaFmt(shavaSegs);
+        if (shavaSegs <= 0) {
+          clearInterval(shavaInterval);
+          var c = shavaAudioCtx, s = shavaSom;
+          if (c && s) { shavaPararSom(c, s); shavaSom = null; shavaGongo(c); }
+          shavaAtivo = false;
+          document.querySelectorAll('.shava-dur').forEach(function(b){ b.disabled = false; });
+          shavaBtn.textContent = 'Iniciar Shavasana';
+          shavaBtn.style.background = '';
+        }
+      }, 1000);
+    } else {
+      clearInterval(shavaInterval);
+      var c = shavaAudioCtx, s = shavaSom;
+      if (c && s) { shavaPararSom(c, s); shavaSom = null; }
+      document.querySelectorAll('.shava-dur').forEach(function(b){ b.disabled = false; });
+      shavaBtn.textContent = 'Iniciar Shavasana';
+      shavaBtn.style.background = '';
+    }
+  });
+
+  document.querySelectorAll('.shava-dur').forEach(function(b) {
+    var on = b.dataset.min === '7';
+    b.style.background = on ? '#e89610' : '#ffffff';
+    b.style.color = on ? '#ffffff' : '#374151';
+    b.style.borderColor = on ? '#e89610' : '#d1d5db';
+  });
+
+})();
+</script>
+</body>
+</html>

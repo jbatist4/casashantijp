@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5V7VY43KMC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5V7VY43KMC');
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Próximos Eventos - Casa Shanti</title>
+  <meta name="description" content="Vivências, retiros e práticas especiais na Casa Shanti. Garanta sua vaga via WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="min-h-screen flex flex-col bg-stone-50 text-teal-900">
+
+<header class="sticky top-0 z-40 border-b border-teal-100 bg-stone-50/90 backdrop-blur">
+  <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6">
+    <a href="/" class="flex items-center gap-3 font-display text-2xl font-semibold text-teal-800">
+      <img src="/assets/images/logo-shanti-transparente.png" alt="Casa Shanti" class="h-16 w-auto" />
+    </a>
+
+    <nav class="hidden gap-8 md:flex" aria-label="Menu principal">
+      <ul class="flex gap-8">
+        <li><a href="/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Início</span></a></li>
+        <li><a href="/grade-horarios/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Modalidades & Grade</span></a></li>
+        <li><a href="/eventos/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Eventos</span></a></li>
+        <li><a href="/galeria/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Galeria</span></a></li>
+        <li><a href="/locacao/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Locação</span></a></li>
+        <li><a href="/recursos/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Recursos</span></a></li>
+        <li><a href="/sobre/"><span class="text-sm font-medium text-teal-800 transition-colors hover:text-amber-600">Sobre</span></a></li>
+      </ul>
+    </nav>
+
+    <button
+      type="button"
+      id="casashanti-menu-toggle"
+      class="md:hidden"
+      aria-label="Abrir menu"
+      aria-expanded="false"
+      aria-controls="casashanti-mobile-menu"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </div>
+
+  <nav id="casashanti-mobile-menu" class="hidden border-t border-teal-100 bg-stone-50 px-4 py-4 md:hidden" aria-label="Menu mobile">
+    <ul class="flex flex-col gap-4">
+      <li><a href="/"><span class="block text-base font-medium text-teal-800">Início</span></a></li>
+      <li><a href="/grade-horarios/"><span class="block text-base font-medium text-teal-800">Modalidades & Grade</span></a></li>
+      <li><a href="/eventos/"><span class="block text-base font-medium text-teal-800">Eventos</span></a></li>
+      <li><a href="/galeria/"><span class="block text-base font-medium text-teal-800">Galeria</span></a></li>
+      <li><a href="/locacao/"><span class="block text-base font-medium text-teal-800">Locação</span></a></li>
+      <li><a href="/recursos/"><span class="block text-base font-medium text-teal-800">Recursos</span></a></li>
+      <li><a href="/sobre/"><span class="block text-base font-medium text-teal-800">Sobre</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="flex-1">
+
+<section class="bg-teal-900 py-14 text-stone-50">
+  <div class="mx-auto max-w-4xl px-4 text-center sm:px-6">
+    <h1 class="font-display text-4xl font-semibold sm:text-5xl">
+      Próximos Eventos
+    </h1>
+    <p class="mt-4 text-stone-100">
+      Vivências, retiros e práticas especiais na Casa Shanti. Garanta sua vaga via WhatsApp.
+    </p>
+  </div>
+</section>
+
+<section class="bg-slate-950 py-14">
+  <div class="mx-auto max-w-6xl px-4 sm:px-6">
+    <div id="eventos-grid" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3"></div>
+    <p id="eventos-vazio" class="hidden text-center text-stone-300">
+      Nenhum evento programado por enquanto. Acompanhe nosso Instagram para novidades!
+    </p>
+  </div>
+</section>
+
+<section class="bg-stone-50 py-14">
+  <div class="mx-auto max-w-3xl px-4 text-center sm:px-6">
+    <h2 class="font-display text-2xl font-semibold text-teal-900">
+      Quer reviver os eventos anteriores?
+    </h2>
+    <p class="mt-3 text-teal-900/80">
+      Confira fotos e momentos das nossas práticas e vivências passadas.
+    </p>
+    <a href="/galeria/" class="mt-4 inline-block rounded-full bg-teal-600 px-6 py-3 font-medium text-stone-50 shadow-md transition-colors hover:bg-teal-700">
+      Ver Galeria de Memórias
+    </a>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-teal-900 text-stone-100">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
+    <div>
+      <h3 class="font-display text-2xl font-semibold text-stone-50">Casa Shanti</h3>
+      <p class="mt-3 text-sm text-teal-100">
+        Um espaço de yoga e bem-estar para respirar, praticar e se reconectar.
+      </p>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold uppercase tracking-wide text-amber-300">
+        Contato
+      </h4>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li>Rua Francisco de Andrade Carneiro, 62 - Bessa, João Pessoa - PB</li>
+        <li>
+          <a href="https://wa.me/5583993503000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Casa%20Shanti." target="_blank" rel="noopener noreferrer" class="hover:text-amber-300">
+            WhatsApp: (83) 9 9350-3000
+          </a>
+        </li>
+        <li>
+          <a href="https://instagram.com/_casashanti" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300">@_casashanti</a>
+          /
+          <a href="https://instagram.com/yoginilu" target="_blank" rel="noopener noreferrer" class="hover:text-amber-300">@yoginilu</a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h4 class="text-sm font-semibold uppercase tracking-wide text-amber-300">
+        Navegação
+      </h4>
+      <ul class="mt-3 space-y-2 text-sm">
+        <li><a href="/grade-horarios/" class="hover:text-amber-300">Modalidades & Grade</a></li>
+        <li><a href="/eventos/" class="hover:text-amber-300">Eventos</a></li>
+        <li><a href="/galeria/" class="hover:text-amber-300">Galeria de Memórias</a></li>
+        <li><a href="/locacao/" class="hover:text-amber-300">Locação de Espaço</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-teal-800 py-4 text-center text-xs text-teal-200">
+    &copy; <span id="ano-atual">2026</span> Casa Shanti. Todos os direitos reservados.
+  </div>
+</footer>
+
+<a
+  href="https://wa.me/5583993503000?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20Casa%20Shanti."
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Conversar no WhatsApp"
+  class="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-teal-600 text-stone-50 shadow-lg transition-transform hover:scale-105 hover:bg-teal-700"
+>
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.832-1.438A9.96 9.96 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2Zm0 18c-1.66 0-3.214-.45-4.553-1.234l-.327-.193-3.024.9.9-3.024-.193-.327A8 8 0 1 1 12 20Zm4.4-5.6c-.243-.122-1.434-.706-1.656-.787-.222-.082-.384-.122-.546.122-.162.244-.626.787-.768.95-.142.163-.284.183-.526.061-.243-.122-1.026-.378-1.957-1.21-.723-.645-1.21-1.44-1.352-1.683-.142-.244-.015-.376.107-.498.122-.122.273-.317.41-.476.137-.158.183-.273.274-.456.092-.183.046-.34-.046-.476-.092-.137-.41-.99-.563-1.367-.15-.366-.304-.317-.418-.323-.107-.006-.23-.007-.353-.007-.122 0-.32.046-.49.226-.17.183-.65.635-.65 1.547 0 .913.668 1.795.762 1.918.092.122 1.27 1.946 3.083 2.65 1.812.703 1.812.468 2.13.44.318-.03 1.026-.42 1.17-.825.142-.406.142-.754.1-.825-.04-.07-.152-.112-.395-.234Z"/>
+  </svg>
+</a>
+
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/gallery-lightbox-v2.js"></script>
+<script src="/assets/js/eventos.js"></script>
+<script>
+  document.getElementById('ano-atual').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
