@@ -2,6 +2,8 @@
 
 Site institucional da **Casa Shanti**, espaço de yoga e bem-estar localizado na Bessa, João Pessoa – PB. O projeto é um site estático com HTML semântico, CSS compilado via Tailwind CSS v4 e JavaScript vanilla, hospedado na Hostinger.
 
+🔗 **Repositório GitHub:** [github.com/jbatist4/casashantijp](https://github.com/jbatist4/casashantijp)
+
 ---
 
 ## Visão Geral
@@ -132,10 +134,10 @@ Para adicionar um evento ou álbum, edite `eventos.json` seguindo a estrutura do
 
 ---
 
-## Créditos
+## Autor
 
-**Autor:** Jorge Batista
-
-**LinkedIn:** [linkedin.com/in/jbatist4321](https://www.linkedin.com/in/jbatist4321/)
-
-**E-mail:** jbatist4321@gmail.com
+**Jorge Batista**  
+* Desenvolvedor Web & Consultor de Soluções Digitais  
+* **GitHub:** [github.com/jbatist4](https://github.com/jbatist4)  
+* **LinkedIn:** [linkedin.com/in/jbatist4321](https://www.linkedin.com/in/jbatist4321/)  
+* **E-mail:** jbatist4321@gmail.com
